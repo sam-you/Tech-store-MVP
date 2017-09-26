@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var session=require('express-session');
 var bycrypt=require('bcrypt-nodejs');
 var  app = express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 var User=require('../database/model/User'); 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -1,8 +1,8 @@
 //Import the mongoose module
 var mongoose = require('mongoose');
-
+//mongodb://<dbuser>:<dbpassword>@ds149134.mlab.com:49134/techstore
 //Set up default mongoose connection
-var mongoDB = 'mongodb://localhost/computers';
+var mongoDB = 'mongodb://admin:admin@ds149134.mlab.com:49134/techstore';
 mongoose.connect(mongoDB, {
   useMongoClient: true
 });
