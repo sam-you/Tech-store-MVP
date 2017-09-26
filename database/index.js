@@ -28,8 +28,13 @@ var computerSchema = mongoose.Schema({
   image:String
 });
 
-var Computer = mongoose.model('Computers', computerSchema);
-
+exports.Computer = mongoose.model('Computers', computerSchema);
+// exports.users = new Schema({
+//     id: Schema.Types.ObjectId,
+//     password: String,
+//     username: String
+// });
+// exports.User = mongoose.model('User', userSchema);
  
 // function savecomputer(data) {
 //     var laptop =new Computer(data);
@@ -39,4 +44,4 @@ var Computer = mongoose.model('Computers', computerSchema);
 //     })
 // }
 
-module.exports = Computer;
+

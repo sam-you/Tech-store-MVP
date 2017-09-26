@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import computerList from './component/computerList.jsx';
-//import computerListEntry from './component/computerListEntry.jsx';
-
+// import Search from './components/Search.jsx';
+// import RepoList from './components/RepoList.jsx';
+// var Ajax = require('react-ajax');
 class App extends React.Component {
   
   constructor(props) {
     super(props);
     this.state = { 
-      
+      repos: []
     }
 
   }
@@ -34,9 +34,9 @@ class App extends React.Component {
 
   render () {
     return (<div>
-      <h1>computers list </h1>
-      <computerlist  />
-      
+      <h1>Github Fetcher</h1>
+      <RepoList repos={this.state.RepoList}/>
+      <Search onSearch={this.search.bind(this)}/>
     </div>)
   }
 }
