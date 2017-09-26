@@ -52,12 +52,8 @@ app.post('/login', function(req, res) {
        
        
          if (user.password===password) {
-           
-           
-           // res.redirect('/index.html');
            createSession(req, res, user);
          } else {
-         	
           res.redirect('/login.html');
          }
        
@@ -108,7 +104,6 @@ checkUser = function(req, res, next) {
 createSession = function(req, res, newUser) {
   return req.session.regenerate(function() {
       req.session.user = newUser;
-      //console.log(req.session.user.username);
       res.redirect('index.html');
     });
 };
