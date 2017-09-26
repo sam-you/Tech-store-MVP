@@ -1,11 +1,19 @@
+
 import React from 'react';
 
-const computerList = (props) => (
+const computerList = () => (
+
 	
-  <div>
-    <h4> computer list component  </h4>
-    	
-  </div>
-)
+    	<div>btata</div>
+    
+    
+);
 
 export default computerList;
+
+// {props.images.map((image) =>(
+//       <computerListEntry image={image}
+       
+//        />
+//        )
+//     )}

@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
- import computerList from './components/computerList.jsx';
- import computerListEntrey from './components/computerListEntry.jsx';
-// var Ajax = require('react-ajax');
+import computerList from './components/computerList.jsx';
+import computerListEntrey from './components/computerListEntry.jsx';
 class App extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = { 
-      repos: []
-    }
-
+    
+  images:window.images
   }
 
   // search (term) {
@@ -33,11 +30,12 @@ class App extends React.Component {
 
 
   render () {
-    return (<div>
-      <h1>Github Fetcher</h1>
+    return ( <div>Tech store
       <computerList />
-      <computerListEntrey />
-    </div>)
+      
+       </div>
+      )
+      
   }
 }
 
